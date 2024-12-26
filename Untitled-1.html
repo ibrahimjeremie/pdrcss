@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDDRCS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(45deg, red, blue);
+            color: white;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo PDDRCS" class="logo">
+        <h1>PDDRCS</h1>
+        <p>Votre plateforme dédiée aux actualités, emplois, et plus encore.</p>
+    </div>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDDRCS - Site d'Actualités, Emplois et SMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur PDDRCS</h1>
+        <p>Actualités | Offres d'emploi | Publicités | Communication par SMS</p>
+    </header>
+    <nav>
+        <a href="#actualites">Actualités</a>
+        <a href="#emplois">Offres d'emploi</a>
+        <a href="#publicites">Publicités</a>
+        <a href="#sms">SMS</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#publication">Publication</a>
+    </nav>
+    <main>
+        <!-- Section Actualités -->
+        <section id="actualites">
+            <h2>Actualités</h2>
+            <p>Ici, vous trouverez les dernières actualités.</p>
+            <article>
+                <h3>Actualité 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </article>
+            <article>
+                <h3>Actualité 2</h3>
+                <p>Suspendisse potenti. Praesent at pulvinar est, vel sollicitudin risus.</p>
+            </article>
+        </section>
+
+        <!-- Section Offres d'emploi -->
+        <section id="emplois">
+            <h2>Offres d'emploi</h2>
+            <p>Consultez les offres d'emploi disponibles.</p>
+            <ul>
+                <li>Développeur Web - CDI - Paris</li>
+                <li>Graphiste - Stage - Lyon</li>
+                <li>Chef de Projet IT - CDD - Marseille</li>
+            </ul>
+        </section>
+
+        <!-- Section Publicités -->
+        <section id="publicites">
+            <h2>Publicités</h2>
+            <p>Annoncez vos produits ici !</p>
+            <div>
+                <img src="https://via.placeholder.com/300x100" alt="Publicité 1">
+                <p>Publicité pour une marque célèbre.</p>
+            </div>
+        </section>
+
+        <!-- Section SMS -->
+        <section id="sms">
+            <h2>Communication par SMS</h2>
+            <p>Recevez des alertes par SMS pour rester informé.</p>
+            <form action="#" method="POST">
+                <label for="phone">Numéro de téléphone :</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro" required><br><br>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- Section Inscription -->
+        <section id="inscription">
+            <h2>Page d'Inscription</h2>
+            <p>Créez votre compte pour accéder à toutes les fonctionnalités.</p>
+            <form action="#" method="POST">
+                <label for="username">Nom d'utilisateur :</label><br>
+                <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required><br><br>
+                <label for="email">Adresse e-mail :</label><br>
+                <input type="email" id="email" name="email" placeholder="Votre e-mail" required><br><br>
+                <label for="password">Mot de passe :</label><br>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required><br><br>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- Section Publication -->
+        <section id="publication">
+            <h2>Publication de Photos et Vidéos</h2>
+            <p>Publiez vos contenus multimédias ici.</p>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="title">Titre de la publication :</label><br>
+                <input type="text" id="title" name="title" placeholder="Titre" required><br><br>
+                <label for="description">Description :</label><br>
+                <textarea id="description" name="description" placeholder="Ajoutez une description" required></textarea><br><br>
+                <label for="media">Photo ou Vidéo :</label><br>
+                <input type="file" id="media" name="media" accept="image/*,video/*" required><br><br>
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - PDDRCS</p>
+    </footer>
+</body>
+</html>
